@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Soul\nAwakening</string>
+    <string name="app_name_header">Soul Awakening</string>
+    <string name="app_version">1.0.0</string>
+    <string name="activate">Activate</string>
+    <string name="player_error">Error initializing YouTube player: %s</string>
+</resources>

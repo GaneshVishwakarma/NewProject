@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorLightWhite"
+    >
+
+    <LinearLayout
+        android:id="@+id/container_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/layout_toolbar" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorLightGray"
+            />
+    </LinearLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/container_toolbar"
+        android:layout_above="@+id/lay_bottom"
+        android:fillViewport="true"
+        android:scrollbarStyle="outsideInset"
+        android:background="@color/colorLightWhite"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/colorWhite"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.6"
+                    android:layout_height="wrap_content"
+                    android:text="Language"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorGray"
+                    />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.4"
+                    android:layout_height="wrap_content">
+
+                <belka.us.androidtoggleswitch.widgets.ToggleSwitch
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    custom:textToggleLeft="Hindi"
+                    custom:textToggleRight="English"
+                    custom:activeBgColor="@color/colorDarkGray"
+                    custom:activeTextColor="@android:color/white"
+                    custom:inactiveBgColor="@color/colorLightGray"
+                    custom:inactiveTextColor="@android:color/black"
+                    custom:separatorColor="@color/colorDarkGray"
+                    android:textSize="10sp"
+                    />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.6"
+                    android:layout_height="wrap_content"
+                    android:text="Format"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorGray"
+                    />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.4"
+                    android:layout_height="wrap_content">
+
+                    <belka.us.androidtoggleswitch.widgets.ToggleSwitch
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        custom:textToggleLeft="MP3"
+                        custom:textToggleRight="MP4"
+                        custom:activeBgColor="@color/colorDarkGray"
+                        custom:activeTextColor="@android:color/white"
+                        custom:inactiveBgColor="@color/colorLightGray"
+                        custom:inactiveTextColor="@android:color/black"
+                        custom:separatorColor="@color/colorDarkGray"
+                        android:textSize="10sp"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.6"
+                    android:layout_height="wrap_content"
+                    android:text="Schedule"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorGray"
+                    />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.4"
+                    android:layout_height="wrap_content">
+
+                    <belka.us.androidtoggleswitch.widgets.ToggleSwitch
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"
+                        custom:textToggleLeft="Today"
+                        custom:textToggleRight="Days"
+                        custom:activeBgColor="@color/colorDarkGray"
+                        custom:activeTextColor="@android:color/white"
+                        custom:inactiveBgColor="@color/colorLightGray"
+                        custom:inactiveTextColor="@android:color/black"
+                        custom:separatorColor="@color/colorDarkGray"
+                        android:textSize="10sp"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.6"
+                    android:layout_height="wrap_content"
+                    android:text="Notify me before"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorGray"
+                    />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.4"
+                    android:layout_height="wrap_content">
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|start"
+                        />
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center_vertical|end"
+                        android:layout_marginStart="10dp"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</RelativeLayout>
